@@ -1,0 +1,23 @@
+#params.txt for shear viscosity O(N) code, v2
+#You are welcome to change the numerical values
+#in this file, but please don't change the structure
+#because the variable positions are hard-coded in
+#the parameter file reader.
+#Thanks!
+#
+#Number of space-dimensions [2 or 3]
+D	3	
+#Interpolation space size [1-100]
+NN	40
+#Quadrature order [1-10]
+quad	5
+#Single run [Y/N] with lambda [0-inf]
+Y	1.0
+#Verbose level [0-2]
+verbose	 0
+#Integrator1 steps
+RM	 40
+#Integrator2 steps
+RM2	     200
+#Integrator3 steps
+RM3	     200
