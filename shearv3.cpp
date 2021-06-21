@@ -246,7 +246,7 @@ double xyDeltabar(double x0,double x, double y,double m)
       if (D==3)
 	res=0.25/(x*y)*sign(x0)*P2(m8/(2*x*y));
       else if (D==2)
-	res=0.5*sign(x0)*f(m8/(2*x*y))/sqrt(disc);
+	res=sign(x0)*f(m8/(2*x*y))/sqrt(disc);
     }
   // if (isnan(res))
   // {
@@ -1277,9 +1277,9 @@ int main(int argc, char *argv[])
       fprintf(outfile,"#lambda/T\t mass/T\t\t s/T^3 \t\t eta/s(R2)\t eta/s (full)\n");
       printf("#lambda/T\t mass/T\t\t s/T^3 \t\t eta/s(R2)\t eta/s (full)\n");
 
-      int lowr=-6;
-      int highr=17;
-      double step=1;
+      int lowr=-12;
+      int highr=34;
+      double step=0.5;
       
       if (D==3)
 	{
